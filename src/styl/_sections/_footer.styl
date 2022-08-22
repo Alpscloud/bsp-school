@@ -1,2 +1,83 @@
 .footer
-	background-color $footer-bg
+	padding-bottom 50px
+	
+	&-content
+		border-top 1px dotted black
+		padding-top 100px
+		
+	&-bottom
+		margin-top 100px
+		
+	&-top
+		padding-right 120px
+		.btn
+			flex none
+			padding-left 30px
+			padding-right 30px
+		img
+			width 116px
+			margin-left 200px
+		
+	.socials
+		padding-top 0
+		svg
+			width 30px
+			height 30px
+			
+	&-nav
+		ul
+			column-count 2
+			column-gap 180px
+		li
+			display block
+			margin-bottom 25px
+		a
+			text-transform uppercase
+			font em(16) $Reg
+			line-height 125%
+			color $text-color
+			&:hover
+				color $accent-color
+		&__bottom
+			ul
+				display flex
+			li
+				display inline-block
+
+				margin-right 10%
+				&:last-child
+					margin-right 0
+					
+			a
+				white-space nowrap
+				font 13px $Reg
+				line-height 15px
+				color $text-color
+				&:hover
+					color $accent-color
+
+.copyright
+	white-space nowrap
+	font-size 12px
+	text-transform uppercase
+			
+.developer
+	display flex
+	flex-wrap nowrap
+	align-items center
+	text-transform uppercase
+	font 13px $Med
+	white-space nowrap
+	flex none
+	a
+		display block
+		width 73px
+		height 25px
+		flex none
+		margin-left 40px
+		svg
+			svg()
+			fill #121010
+		&:hover
+			svg
+				fill $accent-color

@@ -1,0 +1,394 @@
+.sect__promo
+	padding-top 180px
+	padding-bottom 90px
+.promo-content
+	&__img
+		flex none
+		width 380px
+		height 450px
+		position relative
+		img
+			display block
+			&:nth-child(1)
+				width 140px
+				height auto
+				position absolute
+				top 0
+				left 58.5px
+			&:nth-child(2)
+				width 100%
+				height auto
+				position absolute
+				bottom 0
+				left 0
+	&__text
+		
+		margin-right 72px
+		text-transform uppercase
+		h1, p
+			font em(32) $Reg
+			line-height 110%
+			margin-bottom 24px
+			&:last-child
+				margin-bottom 0
+		h2
+			font em(48) $Reg
+			line-height 133%
+			margin-bottom 24px
+			
+
+.timer
+	margin-top 24px
+	margin-bottom em(75)
+	&-title
+		font em(21) $Med
+		text-transform uppercase
+		margin-bottom 20px
+	&-units
+		display flex
+		justify-content space-between
+		flex-wrap nowrap
+		width 510px
+		margin 0 auto
+	&-unit
+		text-align center
+		font em(24) $Med
+		text-transform uppercase
+		width 80px
+		span
+			display block
+			font 48px $Bold
+			line-height 1
+			margin-bottom 40px
+			
+// About
+.sect__about
+	padding-bottom 145px
+	
+.about-course
+	&__img
+		width 318px
+		flex none
+		margin-right 80px
+		img
+			display block
+	&__content
+		flex 1
+		padding-top 90px
+		
+	&__title
+		font em(21) $Med
+		text-transform uppercase
+		line-height 121%
+		margin-bottom 60px
+	&__text
+		margin-bottom -32px
+		margin-left -60px
+		margin-right -60px
+		display flex
+		position relative
+		padding-right 105px
+		div
+			width 50%
+			padding-left 60px
+			padding-right 60px
+			
+			p
+				margin-bottom 32px
+				&:last-child
+					margin-bottom 0
+			h3	
+				text-transform uppercase
+				font em(21) $Med
+				margin-top 80px
+				
+.partners-logos
+	margin-top 130px
+	.row
+		margin-left -10px
+		margin-right -10px
+	
+.partner-logo
+	flex-col-center()
+	width auto
+	padding-left 10px
+	padding-right 10px
+	img
+		@extends .content-img
+		max-width 190px
+		max-height 74px
+		
+// Course description
+.sect__course-description
+	padding-bottom 90px
+	
+.course-description
+	&__img
+		flex none
+		margin 0 140px
+		width 126px
+		img
+			display block
+	&__text
+		flex 1
+		font em(21) $SemiBold
+		line-height 121%
+		text-transform uppercase
+		em, i, b, strong
+			color $accent-color
+
+// Problems
+.sect__problems
+	padding-bottom 80px
+	
+.problem
+	text-transform uppercase
+	font-size em(21)
+	line-height 121%
+	text-align left
+	max-width 450px
+	p
+		margin-bottom 40px
+	i, em
+		text-transform none
+		font-style italic
+	img
+		display block
+		width auto
+		height 312px
+		margin-bottom 33px
+		
+// Capabilities
+.sect__capabilities
+	background-color $accent-color
+	color $basic-white-color !important
+	padding 100px 0
+	
+.capabilities
+	position relative
+	&__img
+		display block
+		width 571px
+		height 661px
+		position absolute
+		right 70px
+		top -125px
+		img
+			display block
+			position absolute
+			&:nth-child(1)
+				width 290px
+				height 290px
+				top 0
+				left 0
+			&:nth-child(2)
+				width 278px
+				height 351px
+				bottom 0
+				right 0
+			
+	&__list
+		text-transform uppercase
+		font-size em(21)
+		line-height 110%
+		max-width 820px
+		margin-bottom 60px
+		position relative
+		z-index 1
+		
+		ul
+			display flex
+			flex-wrap wrap
+			justify-content flex-start
+			margin-left -15px
+			margin-right -15px
+			
+			li
+				width 50%
+				margin-bottom 50px
+				padding-left 15px
+				padding-right 15px
+				
+	&__slogan
+		text-transform uppercase
+		font em(40) $SemiBold
+		line-height 110%
+		position relative
+		z-index 1
+	
+// Program
+.sect__program
+	padding 95px 0 290px
+	
+.program
+	position relative
+	&__img
+		display block
+		width 410px
+		position absolute
+		right 360px
+		bottom -175px
+	&-step
+		line-height 109%
+		width 360px
+		position relative
+		z-index 1
+		img
+			display block
+			width 120px
+			height 120px
+			margin-bottom 50px
+			 
+
+// Packages
+.sect__packages
+	padding-bottom 120px
+	
+.package
+	position relative
+	min-height 540px
+	transition transform .5s
+	transform-style preserve-3d
+	cursor pointer
+	height 100%
+	.btn
+		padding-left 10px
+		padding-right 10px
+		width 100%
+		max-width 190px
+		position absolute
+		bottom 45px
+		horisontal-center()
+	&-front,
+	&-back
+		position absolute
+		width 100%
+		height 100%
+		backface-visibility hidden
+		border-radius 25px
+		padding 85px 50px 45px
+		transform-style preserve-3d
+		i, em
+			font-style italic
+	&-front
+		background-color #F3F3F3
+		border 3px solid transparent
+		transition transform 0.5s
+		&__content
+			text-align center
+			img
+				display block
+				margin 0 auto 35px auto
+				width 105px
+				height 105px
+	&-title
+		text-transform uppercase
+		font em(36) $Bold
+		line-height 1
+	&-back
+		background-color $basic-white-color
+		border 3px solid $accent-color
+		transform rotateY( 180deg )
+		text-align center
+		&__content
+			h5
+				font em(28) $SemiBold
+				line-height 110%
+				margin-bottom 20px
+	&:hover
+		transform rotateY( 180deg ) 
+ 
+	&-wrapper
+		width 100%
+		flex 1
+		max-width 430px
+		position relative
+		perspective 2000
+		margin-bottom 50px
+		
+// Feedbacks
+.sect__feedbacks
+	padding-bottom 260px
+.feedbacks
+	position relative
+	&-img
+		display block
+		position absolute
+		right 25%
+		bottom -265px
+		width 326px
+		display block
+
+	&-slider
+		.slick-track
+			display flex
+			flex-wrap nowrap
+			margin-left -140px
+
+		.slick-slide
+			float none !important
+			padding-left 140px
+		
+			
+.feedback
+	font-size em(16)
+	line-height 140%
+	&-avatar
+		display block
+		width 125px
+		height 145px
+		background-position 50%
+		background-repeat no-repeat
+		background-size contain
+		margin-bottom em(44)
+	&-author__name
+		font em(21) $SemiBold
+		line-height 1
+		margin-bottom 32px
+		
+// Prices
+.sect__prices
+	padding-bottom 140px
+	
+.price-package
+	height 100%
+	border-radius 25px
+	border 2px dashed $accent-color
+	display flex
+	flex-direction column
+	justify-content flex-end
+	align-items center
+	padding 45px
+	min-height 380px
+	&__wrapper
+		width 360px
+	&__title
+		font em(36) $Bold
+		margin-bottom 35px
+		text-transform uppercase
+	&__value
+		font em(36) $Bold
+		margin-bottom 50px
+		span
+			font-size .6em
+			
+// Advantages
+.sect__advantages
+	padding-bottom 120px
+.advantages
+	margin-bottom -62px
+	
+.advantage
+	margin-bottom 62px
+	p
+		max-width 326px
+	img
+		display block
+		height 130px
+		width auto
+		margin-bottom 70px
+	&__title
+		text-transform uppercase
+		font em(32) $Bold
+		line-height 1
+		margin-bottom 65px

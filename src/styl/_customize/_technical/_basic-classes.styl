@@ -21,20 +21,19 @@
 	height 100%
 
 .sect-title
-	font 2em $Bold
-	margin-bottom 40px
+	font em(36) $Bold
+	line-height 110%
+	margin-bottom 55px
+	text-transform uppercase
 	
-.title
-	font-family $Bold
-	&-h1-size
-		font-size 36px
-		line-height 38px
-	&-h2-size
-		font-size 32px
-		line-height 34px
-	&-h3-size
-		font-size 28px
-		line-height 32px
+.sect-subtitle
+	text-transform uppercase
+	font em(36) $Reg
+	line-height 110%
+	margin-bottom 90px
+	
+.block-title
+	font em(36) $Bold
 		
 .text-center
 	text-align center
@@ -150,4 +149,7 @@
 				content counter(list) ". "
 				display inline-block
 				margin-right 4px
+				
+	i, em
+		font-style italic
 				

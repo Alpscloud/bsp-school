@@ -1,9 +1,38 @@
 .nav
-	&__item
+	text-align center
+	padding-top 15px
+	
+	flex 1
+	&-list
+		margin-right 25px
+		
+	&-item
 		display inline-block
-		margin-right 15px
+		margin-right 6%
 		&:last-child
 			margin-right 0
-	&__link
-		display block
+			
+	&-link
 		color $text-color
+		padding-bottom 4px
+		border-bottom 5px solid transparent
+		text-transform uppercase
+		font em(21) $SemiBold
+		&:hover,
+		&.is-active
+			border-color $accent-color
+			
+	&-wrapper
+		flex 1
+		margin-left 25px
+		display flex
+		flex-wrap nowrap
+		align-items center
+		pointer-events auto
+		.logo
+			display none
+			
+	&-img,
+	&-btn
+
+		display none
