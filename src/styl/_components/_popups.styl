@@ -28,13 +28,77 @@
 			height 100%
 	&__body
 		width 100%
-		max-width 400px
+		max-width 1280px
 		background-color $popup-body-bg
-		padding 20px
+		padding 60px 110px
 		display inline-block
 		vertical-align middle
 		position relative
 		white-space normal
+		
+	&__title
+		text-transform uppercase
+		font em(36) $Bold
+		text-align left
+		margin-bottom 60px			
+		
+	&-form
+		width 100%
+		flex 1
+		max-width 550px
+		form
+			max-width 470px
+		&__text
+			text-transform uppercase
+			font em(21) $Bold
+			margin-bottom 40px
+			text-align left
+			
+		&__notice
+			text-transform uppercase
+			color #5F5F5F
+			font-size em(16)
+			text-align left
+			span
+				color $accent-color
+		
+	&-package
+		width 100%
+		flex 1
+		max-width 350px
+		text-align left !important
+		padding-bottom 90px
+		
+		.package-title
+			font-size em(36)
+			margin-bottom 40px
+			
+		.package-back__content
+			p
+				font-style italic
+				font-size em(14)
+				line-height 19px
+			h5
+				font-size em(20)
+				br
+					display none
+		
+		img
+			width 100px
+			height 100px
+			margin-bottom 35px
+			
+	&__content
+		position relative
+		
+		.btn
+			position absolute
+			left 0
+			bottom 0
+			padding-left 10px
+			padding-right 10px
+			width 100%
+			max-width 210px
 		
 	.btn-close
 		position absolute

@@ -18,33 +18,39 @@ input[type="search"]::-webkit-search-results-decoration
 	&-input
 		display block
 		width 100%
-		padding 10px 15px
+		padding 28px 35px
 		text-align left
-		border 2px solid transparent
-		font 1em $Reg
+		border 1px solid #979797
+		border-radius 50px
+		font em(21) $Bold
 		color $text-color
+		text-transform uppercase
 		&:hover,
 		&:focus
 			border-color $accent-color
 		&::-webkit-input-placeholder
 			font 1em $Reg
-			color $text-color
+			color #979797
+			text-transform uppercase
 		&::-moz-placeholder
 			font 1em $Reg
-			color $text-color
+			color #979797
+			text-transform uppercase
 		&:-moz-placeholder
 			font 1em $Reg
-			color $text-color
+			color #979797
+			text-transform uppercase
 		&:-ms-input-placeholder
 			font 1em $Reg
-			color $text-color
+			color #979797
+			text-transform uppercase
 			
 		&.is-error
 			border-color red
 			
 	&-group
 		position relative
-		margin-bottom 10px
+		margin-bottom 30px
 		&:last-child
 			margin-bottom 0
 			
@@ -52,83 +58,8 @@ input[type="search"]::-webkit-search-results-decoration
 			display inline-block
 			margin-bottom 5px
 			
-	&-textarea
-		min-height 200px
+	
 	
 
-
-
-.form
-	&-checkbox
-		display inline-block
-		position relative
-		padding-left 25px
-		font 1em $Reg
-		line-height 1
-		color $text-color
-		&:before
-			pseudo()
-			transition all .17s ease-in-out
-			position absolute
-			left 0
-			vertical-center()
-			border-radius 2px
-			width 16px
-			height 16px
-			border 1px solid $text-color
-			background-position 50% 50%
-			background-repeat no-repeat
-			background-size 12px 12px
-			
-		&__label
-			display inline-block
-			input
-				display none
-				&:checked
-					+ span
-						&:before
-							background-color $text-color
-							background-image url('../img/icons/svg/checkbox-ic.svg')
-							
-.form
-	&-radio
-		display inline-block
-		position relative
-		padding-left 25px
-		font 1em $Reg
-		line-height 1
-		color $text-color
-		&:before
-			pseudo()
-			transition all .17s ease-in-out
-			position absolute
-			left 0
-			vertical-center()
-			border-radius 50%
-			width 16px
-			height 16px
-			border 1px solid $text-color
-		&:after
-			pseudo()
-			transition all .17s ease-in-out
-			position absolute
-			left 2px
-			top 2px
-			width 12px
-			height 12px
-			border-radius 50%
-			background-color $text-color
-			display none
-			
-
-			
-		&__label
-			display inline-block
-			input
-				display none
-				&:checked
-					+ span
-						&:after
-							display block
 
 

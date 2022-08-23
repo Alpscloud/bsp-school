@@ -1,0 +1,61 @@
+<!-- Popup -->
+<div class="popup js-popup">
+	<div class="popup__overflow">
+		<div class="popup__body text-center">
+			<button class="btn-close js-close-popup-btn" type="button">
+				<svg  viewBox="0 0 51 51"  xmlns="http://www.w3.org/2000/svg">
+					<path d="M28.3553 0.355347L23.3553 0.355347V22.3553H0.355347L0.355347 27.3553H23.3553L23.3553 50.3553H28.3553L28.3553 27.3553L50.3553 27.3553V22.3553L28.3553 22.3553V0.355347Z" />
+				</svg>
+			</button>
+			<!-- Popup content-->
+			<div class="popup__content">
+
+				<p class="popup__title">Ви обрали курс:</p>
+
+				<div class="row align-horisontal-between row-nowrap row-gutters">
+					<div class="popup-package col-gutters">
+						<img src="img/packages/1.svg" alt="">
+						<p class="package-title">basic</p>
+						<div class="popup-package__content">
+					
+							<div class="package-back__content">
+								<h5>Самостійне<br> вивчення</h5>
+								<p><em>Ви отримуєте мануал<br> для самостійної роботи</em></p>
+							</div>
+						</div>
+					</div>
+					<div class="popup-form col-gutters">
+						<p class="popup-form__text">Залиште нам контакти аби ми<br> могли з вами зв’язатись чи надіслати<br> матеріали для навчання:</p>
+
+						<form>
+							<!-- Hidden inputs -->
+							<input type="hidden" name="project_name" value="BSP Schoold">
+							<input type="hidden" name="form_subject" value="">
+							<input type="hidden" name="price" value="">
+							<input type="hidden" name="currency" value="USD">
+							<!-- // Hidden inputs -->
+
+							<div class="form-group">
+								<input type="text" class="form-input js-required-input " name="name" placeholder="ім’я*">
+							</div>
+
+							<div class="form-group">
+								<input type="tel" class="form-input js-required-input" name="phone" placeholder="телефон*">
+							</div>
+
+							<div class="form-group">
+								<input type="email" class="form-input js-required-input" name="email" placeholder="ваш  email*">
+							</div>
+
+							<p class="popup-form__notice">обов’язково для заповненя - <span>*</span></p>
+							<button class="btn" type="submit">до сплати</button>
+						</form>
+					</div>
+				</div>
+
+			</div>
+			<!-- //Popup content-->
+		</div>
+	</div>
+</div>
+<!-- //Popup -->
