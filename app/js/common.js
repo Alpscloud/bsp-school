@@ -152,14 +152,13 @@ $('form').submit(function(e) {
 
 	$.ajax({
 		type: "POST",
-		url: "mail.php", //Change
+		url: "/wp-content/themes/bsp-school-theme/mail.php", //Change
 		data: that.serialize()
 	}).done(function() {
-		// add active clases
-		setTimeout(function() {
-			// remove active classes
-			that.trigger("reset");
-		}, 2000);
+		$('html').removeClass('is-fixed');
+		$('.js-popup').fadeOut(300);
+		that.trigger("reset");
+		alert('Дякуємо! Ваша заявка успішно відправлена.')
 	});
 
 });
